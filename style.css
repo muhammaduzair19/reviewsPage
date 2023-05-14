@@ -42,6 +42,7 @@ body{
     flex-direction: column;
     align-items: center;
     box-shadow: 6px 6px 8px gray;
+    /* position: relative; */
 }
 .img{
     /* margin: 0 auto; */
@@ -52,7 +53,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    z-index: 1;
+}
+.commas{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #4072f1;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
 }
 .imgborder{
     width: 160px;
@@ -67,6 +81,7 @@ body{
 .designation{
     color: #4072f1;
 }
+
 .review{
     text-align: center;
 }

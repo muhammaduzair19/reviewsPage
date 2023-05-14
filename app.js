@@ -50,10 +50,10 @@ window.addEventListener("DOMContentLoaded", () =>{
 
 function personShow(person){
     const item = personsArray[person]
-    img.style.backgroundImage = `url("${personsArray[person].personImage}")`;
-    Name.textContent = personsArray[person].personName;
-    designation.textContent = personsArray[person].personDesignation;
-    review.textContent = personsArray[person].personReview;
+    img.style.backgroundImage = `url("${item.personImage}")`;
+    Name.textContent = item.personName;
+    designation.textContent = item.personDesignation;
+    review.textContent = item.personReview;
 }
 
 btnright.addEventListener('click', () =>{
